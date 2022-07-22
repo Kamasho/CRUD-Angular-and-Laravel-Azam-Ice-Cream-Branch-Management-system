@@ -1,0 +1,20 @@
+.head{
+  background-color: rgb(239, 237, 237);
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+  margin-left: 145px;
+  margin-top: 20px;
+}
+.head h3{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+.head h4{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+.duties p{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}

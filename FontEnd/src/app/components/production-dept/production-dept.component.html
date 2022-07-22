@@ -1,0 +1,42 @@
+<div class="head">
+  <h3><strong>Bakhresa</strong>, Mtwara Ice cream Factory employee Management System!</h3>
+  <h4><b>Productions Department panel!</b></h4>
+</div>
+<hr>
+<div class="container-fluid">
+<div class="duties">
+  <p>The duties of Production Department are, 1) Production Planning 2) Technical & Industrial Design 3) Production 4) QA Manager 5) Mantenance</p>
+</div>
+</div>
+<div class="container">
+  <h4 style="text-align: center; font-family:fantasy;">List Of Productions Department</h4>
+  <table class="table table-striped table-hover" >
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Phone No</th>
+          <th scope="col">Emp ID</th>
+          <th scope="col">Nationality</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pro of ProductionsDept">
+          <td>{{ pro.id }}</td>
+          <td>{{ pro.name }}</td>
+          <td>{{ pro.email }}</td>
+          <td>{{ pro.phone_no }}</td>
+          <td>{{ pro.empl_id }}</td>
+          <td>{{ pro.nationality }}</td>
+          <td>
+              <button style="margin-left: 2px;" (click)="deleteData(pro.id)" class="btn btn-danger btn-sm">Delete</button>
+              <button style="margin-left: 2px;" routerLink="/edit/{{ pro.id }}" class="btn btn-success btn-sm">Edit</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button routerLink="/home" class="btn btn-outline-dark btn-md">Go Back</button>
+    <button (click)="openDialog()" class="btn btn-outline-success m-2 btn-md">Add</button>
+</div>

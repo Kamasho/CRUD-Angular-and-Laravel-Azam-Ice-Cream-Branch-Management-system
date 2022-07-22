@@ -1,0 +1,37 @@
+<div class="form" mat-dialog-content>
+  <h1 mat-dialog-title>Azam, Ice Cream New Production Member.</h1>
+  <form (ngSubmit)="insertProduction()">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Enter Name" name="name" [(ngModel)]="production.name"><br>
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" placeholder="Enter email" name="email" [(ngModel)]="production.email"><br>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Enter phone no" name="phone_no" [(ngModel)]="production.phone_no"><br>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Enter employee id" name="empl_id" [(ngModel)]="production.empl_id"><br>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Enter Nationality" name="nationality" [(ngModel)]="production.nationality"><br>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Enter Age" name="age" [(ngModel)]="production.age"><br>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Enter Gender" name="gender" [(ngModel)]="production.gender"><br>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Enter Education level" name="edu_level" [(ngModel)]="production.edu_level"><br>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Enter Salary" name="salary" [(ngModel)]="production.salary"><br>
+    </div>
+    <div mat-dialog-actions>
+      <button class="btn btn-outline-dark" routerLink="/production-dept">Submit</button>
+      <button mat-button mat-dialog-close>Close</button>
+    </div>
+  </form>
+
+</div>
